@@ -6,6 +6,7 @@
     <dimen name="height_width16">16dp</dimen>
     <dimen name="height_width24">24dp</dimen>
     <dimen name="height_width48">48dp</dimen>
+    <dimen name="height_width100">100dp</dimen>
 
     <!--Text sizes-->
     <dimen name="textSize12">12sp</dimen>
