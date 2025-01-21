@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dimensions-->
+    <dimen name="height_width0">0dp</dimen>
+    <dimen name="height_width16">16dp</dimen>
+    <dimen name="height_width48">48dp</dimen>
+
+    <!--Text sizes-->
+    <dimen name="textSize12">12sp</dimen>
+</resources>

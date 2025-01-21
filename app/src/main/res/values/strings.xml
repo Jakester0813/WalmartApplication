@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Country Application</string>
+    <string name="load_data">Load Data</string>
+    <string name="loading">Loading…</string>
+    <string name="error_message">Uh oh, something must have went wrong with fetching data…</string>
+    <string name="bad_data_message">Uh oh, looks like bad data was returned.</string>
+    <string name="no_data_message">No data was returned.</string>
+    <string name="no_internet_message">Looks like we are having a bad internet connection moment. Try again later.</string>
+    <string name="try_again">Try Again</string>
+    <string name="country_name"> %s, %s</string>
+</resources>
