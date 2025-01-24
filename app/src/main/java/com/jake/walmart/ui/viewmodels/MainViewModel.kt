@@ -33,14 +33,18 @@ class MainViewModel(private val application: Application) : AndroidViewModel(app
                     val result = useCases.getCountries(case)
                     if (result is CountryResult.Success) {
                         if (result.data!!.isNotEmpty()) {
+                            //There's data returned
                             State.success(result.data)
                         } else {
+                            //There's no data returned
                             State.noData()
                         }
                     } else {
+                        //Otherwise there might be some error from the network
                         State.error(result.error)
                     }
                 } catch (e: Exception) {
+                    //Something funky happened between getting data and returning data, parsing maybe?
                     State.error(e.message)
                 }
             }

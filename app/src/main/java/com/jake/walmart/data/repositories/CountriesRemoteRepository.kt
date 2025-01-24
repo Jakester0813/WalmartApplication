@@ -13,8 +13,7 @@ class CountriesRemoteRepository : RemoteRepository{
     val url = URL("https://gist.githubusercontent.com/peymano-wmt/32dcb892b06648910ddd40406e37fdab/raw/db25946fd77c5873b0303b858e861ce724e0dcd0/countries.json")
 
     override suspend fun getCountries(): List<CountryData> {
-        return withContext(Dispatchers.IO) {
-            try {
+            return try {
                 val connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = "GET"
                 connection.connectTimeout = 5000
@@ -36,9 +35,6 @@ class CountriesRemoteRepository : RemoteRepository{
             } catch (e: Exception){
                 throw Exception("Error fetching remote JSON: ${e.message}", e)
             }
-        }
-
-
     }
 
 

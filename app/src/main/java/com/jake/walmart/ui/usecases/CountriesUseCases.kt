@@ -32,7 +32,6 @@ class CountriesUseCases(private val appContext: Context) {
                 } else {
                     dbResult
                 }
-
             }
             CASES.OK_DATA -> {
                 return parseResults(centralRepository.getDataFromJson("some_blank_data.json"), false)
